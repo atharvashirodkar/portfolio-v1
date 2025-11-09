@@ -12,10 +12,17 @@
 
 <body>
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <header>
@@ -23,45 +30,51 @@
         <p>Full Stack Developer • Backend Engineer • Open Source Enthusiast</p>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I’m a developer who builds logical, fast, and maintainable web applications.
-            My focus lies in creating scalable backend systems and crafting smooth UI/UX experiences.
-            I thrive in environments where creativity meets structured problem-solving.
-        </p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a developer who builds logical, fast, and maintainable web applications.
+                My focus lies in creating scalable backend systems and crafting smooth UI/UX experiences.
+                I thrive in environments where creativity meets structured problem-solving.
+            </p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
-            <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-            <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
-            <div class="skill"><i class="fa-brands fa-react"></i> React</div>
-            <div class="skill"><i class="fa-brands fa-node-js"></i> Node.js</div>
-            <div class="skill"><i class="fa-solid fa-database"></i> MySQL</div>
-            <div class="skill"><i class="fa-solid fa-database"></i> MongoDB</div>
-            <div class="skill"><i class="fa-brands fa-github"></i> Git & GitHub</div>
-            <div class="skill"><i class="fa-solid fa-network-wired"></i> REST APIs</div>
-        </div>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+                <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill"><i class="fa-brands fa-react"></i> React</div>
+                <div class="skill"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                <div class="skill"><i class="fa-solid fa-database"></i> MySQL</div>
+                <div class="skill"><i class="fa-solid fa-database"></i> MongoDB</div>
+                <div class="skill"><i class="fa-brands fa-github"></i> Git & GitHub</div>
+                <div class="skill"><i class="fa-solid fa-network-wired"></i> REST APIs</div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>GitHub Projects</h2>
-        <div class="grid" id="repos"></div>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid" id="repos">
+                <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: #64748b;">
+                    <i class="fas fa-spinner fa-spin"></i> Loading repositories...
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact">
-            <p><i class="fa-solid fa-envelope"></i> <a
-                    href="mailto:atharvashirodkar@gmail.com">atharvashirodkar@gmail.com</a></p>
-            <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/atharvashirodkar"
-                    target="_blank">linkedin.com/in/atharvashirodkar</a></p>
-            <p><i class="fa-solid fa-location-dot"></i> Maharashtra, India</p>
-        </div>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <p><i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:atharvashirodkar@gmail.com">atharvashirodkar@gmail.com</a></p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/atharvashirodkar"
+                        target="_blank">linkedin.com/in/atharvashirodkar</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> Maharashtra, India</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         © 2025 Atharva Shirodkar • Built with ❤️ using HTML, CSS, and JavaScript
@@ -71,7 +84,7 @@
         <i class="fa-brands fa-github"></i>
     </a>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
